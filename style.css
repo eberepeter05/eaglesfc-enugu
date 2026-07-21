@@ -1,0 +1,187 @@
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Arial',sans-serif;scroll-behavior:smooth}
+body{background:#f8f8f8;color:#333;line-height:1.6}
+nav{display:flex;justify-content:space-between;align-items:center;padding:15px 8%;background:#8B0000;color:white;position:sticky;top:0;z-index:100;flex-wrap:wrap}
+.logo-img{height:50px;border-radius:50%;border:3px solid gold}
+nav ul{list-style:none;display:flex;gap:15px;flex-wrap:wrap}
+nav a{color:white;text-decoration:none;font-weight:500}
+nav a:hover{color:gold}
+.hero{background:linear-gradient(rgba(139,0,0,0.85),rgba(0,0,0,0.85)),url('images/hero.jpg') center/cover;height:90vh;display:flex;align-items:center;justify-content:center;text-align:center;color:white}
+.hero h1{font-size:42px;color:gold;margin-bottom:10px}
+.hero .nickname{color:white;font-style:italic;margin-bottom:20px;font-size:18px}
+.btn, .btn-whatsapp{background:gold;color:#8B0000;padding:14px 30px;text-decoration:none;border-radius:8px;font-weight:bold;display:inline-block;margin:10px;font-size:16px}
+.btn-whatsapp{background:#25D366;color:white}
+section{padding:70px 8%}
+h2{text-align:center;color:#8B0000;margin-bottom:30px;font-size:32px}
+.vision-mission{display:grid;grid-template-columns:1fr 1fr;gap:30px;margin-top:20px}
+.vision-mission h3{color:#8B0000;margin-bottom:10px}
+.vision-mission ul{margin-top:10px;list-style:inside}
+.teams{background:#eee}
+.team-cards{display:flex;gap:20px;justify-content:center;flex-wrap:wrap;margin-bottom:30px}
+.card{background:white;padding:25px;border-left:5px solid gold;border-radius:8px;width:300px;box-shadow:0 2px 8px rgba(0,0,0,0.1)}
+.card h3{color:#8B0000;margin-bottom:10px}
+.kits-title{text-align:center;margin-top:30px;color:#8B0000}
+.kits{display:flex;justify-content:center;gap:20px;flex-wrap:wrap;margin-top:15px}
+.kits div{background:white;padding:12px 18px;border-radius:5px;font-weight:500}
+.academy ul{list-style:inside;margin-top:10px}
+.academy h4{margin-top:15px;color:#8B0000}
+.gallery{background:white;text-align:center}
+.gallery-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:15px;margin-top:30px}
+.gallery-grid img{width:100%;height:250px;object-fit:cover;border-radius:10px;box-shadow:0 4px 10px rgba(0,0,0,0.2);transition:transform 0.3s}
+.gallery-grid img:hover{transform:scale(1.05)}
+.management{background:#eee}
+.management-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:15px}
+.management-grid div{background:white;padding:15px;border-radius:8px;text-align:center;border-top:3px solid gold}
+.management-grid b{color:#8B0000}
+.contact{text-align:center}
+footer{background:#8B0000;color:gold;padding:20px;text-align:center;font-weight:bold}
+
+@media(max-width:768px){
+  .vision-mission{grid-template-columns:1fr}
+  nav{flex-direction:column;gap:10px}
+  .hero h1{font-size:32px}
+}/* ABOUT SECTION */
+.about {
+  padding: 60px 20px;
+  max-width: 1100px;
+  margin: auto;
+  text-align: center;
+}
+
+.about h2 {
+  font-size: 2.2rem;
+  color: #8B0000; /* Dark Red */
+  margin-bottom: 20px;
+}
+
+.about p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #333;
+  margin-bottom: 15px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* VISION & MISSION CARDS */
+.vision-mission {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* side by side */
+  gap: 30px;
+  margin-top: 40px;
+  text-align: left;
+}
+
+.vision-mission > div {
+  background: #fff;
+  border-left: 5px solid #FFD700; /* Gold accent */
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.vision-mission > div:hover {
+  transform: translateY(-5px);
+}
+
+.vision-mission h3 {
+  color: #8B0000; /* Dark Red */
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+}
+
+.vision-mission ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.vision-mission ul li {
+  margin-bottom: 10px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.vision-mission ul li::before {
+  content: "🦅"; /* Eagle emoji as bullet */
+  position: absolute;
+  left: 0;
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 768px) {
+  .vision-mission {
+    grid-template-columns: 1fr; /* stack on phone */
+  }
+}.about {
+  background: linear-gradient(to bottom, #fff 0%, #FFF8E1 100%); /* light gold fade */
+}/* CONTACT SECTION */
+.contact {
+  padding: 60px 20px;
+  text-align: center;
+  background: #8B0000; /* Dark Red background */
+  color: white;
+}
+
+.contact h2 {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+
+.whatsapp-btn {
+  display: inline-block;
+  background: #25D366; /* WhatsApp Green */
+  color: white;
+  padding: 15px 30px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 20px 0;
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+}
+
+.whatsapp-btn:hover {
+  transform: scale(1.05);
+}    nav { overflow-x: auto; white-space: nowrap; }.coming-soon {
+  background: #FFD700;
+  color: #8B0000;
+  text-align: center;
+  padding: 20px;
+  font-weight: bold;
+}.coming-soon {
+  background: linear-gradient(90deg, #FFD700 0%, #FFC107 100%); /* Gold gradient */
+  color: #8B0000; /* Dark Red text */
+  text-align: center;
+  padding: 30px 20px;
+  border-bottom: 4px solid #8B0000;
+}
+
+.coming-soon h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.coming-soon p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+.waiting-btn {
+  display: inline-block;
+  background: #8B0000; /* Dark Red button */
+  color: #FFD700; /* Gold text */
+  padding: 16px 35px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(139, 0, 0, 0.4);
+}
+
+.waiting-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(139, 0, 0, 0.6);
+}
